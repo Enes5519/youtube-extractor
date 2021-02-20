@@ -1,6 +1,6 @@
 {
   "name": "youtube-extractor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unofficial YouTube API for download and search",
   "main": "index.js",
   "scripts": {
