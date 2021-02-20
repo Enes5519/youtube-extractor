@@ -20,7 +20,8 @@ async function getVideoFormats(video_id) {
           hasCipher,
           hasCipher ? decodeJSONFromQuery(format.signatureCipher) : format.url,
           format.mimeType,
-          video_id
+          video_id,
+          format.bitrate
         );
       });
     }
