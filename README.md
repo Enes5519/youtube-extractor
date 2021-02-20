@@ -1,6 +1,11 @@
 # youtube-extractor
 Unofficial YouTube API for download and search videos
 
+## Download
+```s
+$ npm i youtube-extractor --save
+```
+
 ## Simple Example for downloading
 ```js
 const extractor = require("youtube-extractor");
