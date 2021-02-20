@@ -1,0 +1,30 @@
+{
+  "name": "youtube-extractor",
+  "version": "1.0.0",
+  "description": "Unofficial YouTube API for download and search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enes5519/youtube-extractor.git"
+  },
+  "keywords": [
+    "youtube",
+    "youtube-api",
+    "youtube-download",
+    "download-video",
+    "video",
+    "api"
+  ],
+  "author": "Enes5519",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enes5519/youtube-extractor/issues"
+  },
+  "homepage": "https://github.com/Enes5519/youtube-extractor#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
