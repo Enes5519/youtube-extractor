@@ -1,12 +1,13 @@
 const decipher = require('./decipher');
 
 class VideoFormat{
-    constructor(hasCipher, value, mimeType, video_id, bitrate){
+    constructor(hasCipher, value, mimeType, video_id, bitrate, hasAudio){
         this.hasCipher = hasCipher;
         this.value = value;
         this.mimeType = mimeType;
         this.video_id = video_id;
         this.bitrate = bitrate;
+        this.hasAudio = hasAudio;
     }
 
     async downloadURL(){

@@ -11,7 +11,8 @@ async function getVideoFormats(video_id) {
   try {
     const html = await response.text();
     const player_response = JSON.parse(decodeJSONFromQuery(html)['player_response']);
-    const adaptiveFormats = player_response['streamingData']['adaptiveFormats'];
+    const streamingData = player_response['streamingData'];
+    const adaptiveFormats = streamingData['formats'].concat(streamingData['adaptiveFormats']);
 
     if (adaptiveFormats.length !== 0) {
       return adaptiveFormats.map((format) => {
@@ -21,7 +22,8 @@ async function getVideoFormats(video_id) {
           hasCipher ? decodeJSONFromQuery(format.signatureCipher) : format.url,
           format.mimeType,
           video_id,
-          format.bitrate
+          format.bitrate,
+          format.audioQuality !== undefined
         );
       });
     }
